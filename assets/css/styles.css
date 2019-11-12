@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Shentox";
+  src: url("../fonts/shentox-medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ARS Maquette";
+  src: url("../fonts/ars-maquette-regular.woff") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ARS Maquette italic";
+  src: url("../fonts/ars-maquette-regular-italic.woff") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ARS Maquette Bold";
+  src: url("../fonts/ars-maquette-bold-alt.woff") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avalon Bold";
+  src: url("../fonts/avalon-bold.woff") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +44,25 @@
     sans-serif;
 }
 
+.main_container {
+  width: 100%;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
 .top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background: #131313;
   font-size: 13px;
   font-weight: 500;
   line-height: 32px;
   max-height: 32px;
-  position: relative;
-  z-index: 2;
-  list-style: none;
 }
 
 .top-nav-left {
@@ -49,23 +94,22 @@
 }
 
 .top-nav-right {
-  position: relative;
-  left: 63%;
+
   padding-right: 10px;
 }
 
 .main-nav {
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
   padding: 5px 5px 0 5px;
   width: 100%;
   border-bottom: solid 1px rgb(236, 236, 236);
 }
 
 .main-nav-right {
-  position: absolute;
-  top: 12%;
+
   border-left: solid 1px rgb(236, 236, 236);
-  left: 70%;
+
 }
 
 .main-nav-left ul li a {
