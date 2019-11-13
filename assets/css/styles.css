@@ -43,6 +43,49 @@
     Arial,
     sans-serif;
 }
+a {
+  color: #f42;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  height: 86px;
+
+}
+
+.nav_logo {
+
+    top: 0;
+    display: none;
+  
+    height: inherit;
+}
+
+.nav_logo_link {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  background-color: #f42;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  display: block;
+  padding: 16px 20px;
+
+}
+
+.nav_logo_link img {
+  transition: transform .4s ease,-webkit-transform .4s ease;
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 66px;
+  z-index: 999;
+
+}
+
 
 .main_container {
   width: 100%;
@@ -51,7 +94,13 @@
 
 nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
+}
+.navbars {
+  width: 100%;
 }
 
 .top-nav {
@@ -89,7 +138,7 @@ nav {
 .main-nav-left li a,
 .top-nav-right li a,
 .top-nav-left li a {
-  color: #555;
+  color: hsla(0,0%,100%,.6);
   text-decoration: none;
 }
 
@@ -104,6 +153,7 @@ nav {
   padding: 5px 5px 0 5px;
   width: 100%;
   border-bottom: solid 1px rgb(236, 236, 236);
+  height: 54px;
 }
 
 .main-nav-right {
@@ -134,6 +184,12 @@ nav {
   display: block;
   padding: 10px 0 3px 0;
 }
+.main-nav-right ul {
+  display: flex;
+  align-items: baseline;
+}   
+
+
 
 .main-nav-right li:last-child a {
   background-color: #0cc;
@@ -142,11 +198,12 @@ nav {
   font-weight: 700;
   border-radius: 3px;
   line-height: 28px;
-  padding: 1px 12px;
+  padding: 1px 6px;
   font-size: 11px;
   text-align: center;
-  width: 120px;
+  width: 100px;
   height: 28px;
+  
 }
 
 #timer {
@@ -154,7 +211,7 @@ nav {
   font-family:
     'Shentox',
     sans-serif;
-  font-size: 100%;
+  font-size: 20px;
   vertical-align: baseline;
   font-weight: 500;
 }
@@ -169,6 +226,7 @@ nav {
 }
 
 #conf-open {
+  vertical-align: bottom;
   display: inline-block;
   position: relative;
   top: 0;
@@ -181,14 +239,179 @@ nav {
   font-size: 12px;
   margin-right: 4px;
 }
+.mobile-nav {
+  display: none;
+ float: right;
+}
 
-#search-icon {
+.mobile-nav ul li {
+  float: left;
+}
+.mobile-nav ul li::before {
+  content: ' ';
+  position: absolute;
+  background-color: rgb(236, 236, 236);
+  width: 1px;
+  height: 10%;
+  margin-left: 0px;
+
+  top: 3px;
+ 
+}
+
+.mobile-nav-toggle span {
+  transition: .4s;
+    background-color: #f42;
+    display: block;
+    height: 2px;
+    left: 14px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+
+}
+
+.mobile-nav-toggle {
+  display: block;
+  height: 48px;
+  opacity: .25;
+  padding: 16px;
+  width: 48px;
+  opacity: 1!important;
+  position: relative;
+  z-index: 998;
+
+}
+.mobile-nav-toggle span:first-child {
+  transform: translateY(-6px);
+}
+
+.mobile-nav-toggle span:last-child {
+  transform: translateY(6px);
+}
+
+
+.search-icon {
   /* background-position: 848px 848px; */
   display: block;
   background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') no-repeat;
-  background-position-x: 848px;
-  background-position-y: 848px;
+
+  background-position: -832px -832px;
   background-size: auto;
   width: 16px;
   height: 16px;
+  margin: 16px 16px 0;
+
+}
+
+.learn_more_btn {
+  position: relative;
+  bottom: 3px;
+
+}
+
+#ticket-sale img {
+  vertical-align: top;
+}
+
+
+@media (max-width: 1113px) and (min-width: 1023px) {
+  .countdown_bloc, .nav_logo {
+    display: none;
+  }
+
+  #search-icon {
+    margin: 16px 16px;
+  }
+}
+
+@media (max-width: 1113px) and (min-width: 842px) {
+
+  .countdown_bloc #ticket-sale, .countdown_bloc #conf-open, .countdown_bloc .learn_more_btn {
+    display: none;
+  }
+  .main-nav-right {
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+  }
+  .nav_logo {
+    
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 110px;
+    display: unset;
+  }
+  
+  .nav_logo_link img {
+    transition: transform .4s ease,-webkit-transform .4s ease;
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 66px;
+    z-index: 999;
+  }
+  .navbars {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 841px) and (min-width: 500px) {
+
+  .nav_logo {
+    
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 110px;
+    display: unset;
+  }
+  
+  .nav_logo_link img {
+    transition: transform .4s ease,-webkit-transform .4s ease;
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 66px;
+    z-index: 999;
+  }
+.main-nav-left {
+ 
+}
+.countdown_bloc #ticket-sale, .countdown_bloc #conf-open, .countdown_bloc .learn_more_btn, #timer {
+  display: none;
+}
+.top-nav-right {
+  visibility: hidden;
+}
+}
+
+@media (max-width: 768px) {
+
+  .top-nav {
+    display: none;
+  }
+  .main-nav-left {
+    display: none;
+  }
+  nav,  .nav_logo{
+    height: 48px;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    border-bottom: none;
+    height: 54px;
+  }
+  .mobile-nav {
+    display: unset;
+  }
+  #search-icon {
+    display: none;
+  }
 }
