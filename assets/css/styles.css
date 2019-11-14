@@ -99,6 +99,7 @@ nav {
   background: #fff;
   box-shadow: 0 0 32px rgba(0,0,0,.15);
 }
+
 .navbars {
   width: 100%;
 }
@@ -143,7 +144,6 @@ nav {
 }
 
 .top-nav-right {
-
   padding-right: 10px;
 }
 
@@ -184,12 +184,11 @@ nav {
   display: block;
   padding: 10px 0 3px 0;
 }
+
 .main-nav-right ul {
   display: flex;
   align-items: baseline;
 }   
-
-
 
 .main-nav-right li:last-child a {
   background-color: #0cc;
@@ -202,8 +201,7 @@ nav {
   font-size: 11px;
   text-align: center;
   width: 100px;
-  height: 28px;
-  
+  height: 28px; 
 }
 
 #timer {
@@ -239,9 +237,10 @@ nav {
   font-size: 12px;
   margin-right: 4px;
 }
+
 .mobile-nav {
   display: none;
- float: right;
+  float: right;
 }
 
 .mobile-nav ul li {
@@ -296,7 +295,6 @@ nav {
   /* background-position: 848px 848px; */
   display: block;
   background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') no-repeat;
-
   background-position: -832px -832px;
   background-size: auto;
   width: 16px;
@@ -314,7 +312,6 @@ nav {
 #ticket-sale img {
   vertical-align: top;
 }
-
 
 @media (max-width: 1113px) and (min-width: 1023px) {
   .countdown_bloc, .nav_logo {
@@ -414,4 +411,91 @@ nav {
   #search-icon {
     display: none;
   }
+}
+
+.hero-container {
+  display: flex;
+  max-height: 560px;
+  height: 60vh;
+  width: 100%;
+  /* margin-top: 10px; */
+}
+
+.big-image {
+  height: 98%;
+  width: 65%;
+  background-color: deeppink;
+  background-image: url('assets/images/big-image.jpg') center no-repeat;
+  margin: 4px;
+}
+
+.small-image-container {
+  height: 98%;
+  width: 34%;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small-image-1 {
+  background-color: greenyellow;
+  height: 49%;
+}
+
+.small-image-2 {
+  background-color: darkorange;
+  height: 49%;
+}
+
+.latest-news-container {
+  margin: 30px auto;
+  width: 70%;
+  height: 530px;
+  max-height: 600px;
+  background: hotpink;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-news-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: mediumblue;
+  height: 560px;
+  width: 100%;
+}
+
+.latest-news-inner {
+  width: 294px;
+  height: 251px;
+  background-color: lime;
+  margin: 15px;
+}
+
+.latest-funding-container {
+  margin: 100px auto;
+  width: 70%;
+  height: 350px;
+  max-height: 600px;
+  background: hotpink;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-funding-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: mediumblue;
+  height: 560px;
+  width: 100%;
+}
+
+.latest-funding-inner {
+  width: 294px;
+  height: 251px;
+  background-color: lime;
+  margin: 15px;
 }
