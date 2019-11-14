@@ -425,7 +425,9 @@ nav {
   height: 98%;
   width: 65%;
   background-color: deeppink;
-  background-image: url('assets/images/big-image.jpg') center no-repeat;
+  background-image: linear-gradient(to bottom, rgba(235, 72, 159, 0.7), rgb(245, 8, 8, 0.7), rgb(0, 0, 0, 1)), url('../images/const.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: 4px;
 }
 
@@ -440,11 +442,17 @@ nav {
 
 .small-image-1 {
   background-color: greenyellow;
+  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/map.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 49%;
 }
 
 .small-image-2 {
   background-color: darkorange;
+  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/anonymous-group-bitcoin.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 49%;
 }
 
