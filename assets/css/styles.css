@@ -475,9 +475,18 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* background-color: mediumblue; */
   height: 562px;
   width: 100%;
+}
+
+.latest-news-box div a > img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+.latest-news-box div h4 > a {
+  color: black;
 }
 
 .latest-news-inner {
@@ -485,6 +494,17 @@ nav {
   height: 251px;
   background-color: lime;
   margin: 15px;
+}
+
+.latest-news-inner ul li{
+  display: inline;
+  font-size: 13px;
+  color: #555;
+  padding: 0 7px 0 0;
+}
+
+.latest-news-inner ul li a {
+  color: #555;
 }
 
 .latest-funding-container {
@@ -515,7 +535,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* background-color: mediumblue; */
   height: 560px;
   width: 100%;
 }
