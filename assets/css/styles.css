@@ -416,6 +416,58 @@ nav {
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 4px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.big-image-text {
+  padding: 20px;
+  color: white;
+  width: 100%;
+  height: 35%;
+  margin-bottom: 40px;
+}
+
+.date {
+  color: white;
+  position: absolute;
+  top: 110px;
+  right: 710px;
+}
+
+.small-image-text header > h5,
+.big-image-text header > h5 {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.big-image-text header h3 > a {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.small-image-text header h3 > a {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.small-image-text header ul li,
+.big-image-text header ul li {
+  color: #555;
+  display: inline;
+} 
+
+.small-image-text header ul li > a,
+.big-image-text header ul li > a {
+  color: #555;
+}
+
+.small-image-text header ul li > a:hover,
+.big-image-text header ul li > a:hover {
+  color: white;
 }
 
 .small-image-container {
@@ -433,6 +485,9 @@ nav {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 49%;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .small-image-2 {
@@ -440,6 +495,21 @@ nav {
   background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/Laviosa.jpg');
   background-size: 100%;
   height: 49%;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.small-image-text {
+  padding: 20px;
+  color: white;
+  width: 100%;
+  height: 35%;
+  margin-bottom: 60px;
+}
+
+.small-image-text header h3 > a {
+  color: white;
 }
 
 .latest-news-container {
@@ -496,7 +566,6 @@ nav {
   width: 70%;
   height: 350px;
   max-height: 600px;
-  /* background-color: blue; */
   display: flex;
   flex-direction: column;
 }
