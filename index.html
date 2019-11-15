@@ -1,163 +1,963 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The Next Web</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-<div class="main_container">
-    <header>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <header>
         <nav>
-            <div class="nav_logo">
-                <a class="nav_logo_link" href="">
-                        <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
-                </a>
+          <div class="nav_logo">
+            <a class="nav_logo_link" href="">
+              <img
+                alt="The Next Web"
+                src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
+              />
+            </a>
+          </div>
+          <div class="navbars">
+            <div class="top-nav">
+              <span class="top-nav-left">
+                <ul>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Events ▾</a></li>
+                  <li><a href="">Business ▾</a></li>
+                  <li><a href="">AMAs</a></li>
+                  <li><a href="">Spaces</a></li>
+                  <li><a href="">Terms & Conditions</a></li>
+                </ul>
+              </span>
+              <span class="top-nav-right">
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Advertise</a></li>
+                  <li><a href="">Jobs</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </span>
             </div>
-            <div class="navbars">
-                    <div class="top-nav">
-                            <span class="top-nav-left">
-                                <ul>
-                                    <li><a href="">News</a></li>
-                                    <li><a href="">Events ▾</a></li>
-                                    <li><a href="">Business ▾</a></li>
-                                    <li><a href="">AMAs</a></li>
-                                    <li><a href="">Spaces</a></li>
-                                    <li><a href="">Terms & Conditions</a></li>
-                                </ul>
-                            </span>
-                            <span class="top-nav-right">
-                                <ul>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Team</a></li>
-                                    <li><a href="">Advertise</a></li>
-                                    <li><a href="">Jobs</a></li>
-                                    <li><a href="">Contact</a></li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="main-nav">
-                            <span class="main-nav-left">
-                                <ul>
-                                    <li><a href="">Latest</a></li>
-                                    <li><a href="">Hard Fork</a></li>
-                                    <li><a href="">Plugged</a></li>
-                                    <li><a href="">Fundamentals</a></li>
-                                    <li><a href="">Work 2030</a></li>
-                                </ul>
-                            </span>
-                            <span class="main-nav-right">
-                                <ul>
-                                    <li><a id="search-icon" class="search-icon" href=""></a></li>
-                                    <div class="countdown_bloc">
-                                            <li><a id="ticket-sale" href=""><img src="assets/images/ticket_sale.svg" alt="TNW Logo"></a></li>
-                                            <li><a id="conf-open" href="">Opens In</a></li>
-                                            <li><a id="timer" href="">01 : 16 : 46 : 42</a></li>
-                                            <li class="learn_more_btn"><a href="">Learn More</a></li>
-                                    </div>
-                                </ul>
-                            </span>
-                            <span class="mobile-nav">
-                                <ul>
-                                    <li><a class="mobile-search-icon search-icon" href=""></a></li>
-                                    <li> <a href="" class="mobile-nav-toggle">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </a></li>
-                                    </ul>
-                            </span>
-                        </div>
+            <div class="main-nav">
+              <span class="main-nav-left">
+                <ul>
+                  <li><a href="">Latest</a></li>
+                  <li><a href="">Hard Fork</a></li>
+                  <li><a href="">Plugged</a></li>
+                  <li><a href="">Fundamentals</a></li>
+                  <li><a href="">Work 2030</a></li>
+                </ul>
+              </span>
+              <span class="main-nav-right">
+                <ul>
+                  <li><a id="search-icon" class="search-icon" href=""></a></li>
+                  <div class="countdown_bloc">
+                    <li>
+                      <a id="ticket-sale" href=""
+                        ><img src="assets/images/ticket_sale.svg" alt="TNW Logo"
+                      /></a>
+                    </li>
+                    <li><a id="conf-open" href="">Opens In</a></li>
+                    <li><a id="timer" href="">01 : 16 : 46 : 42</a></li>
+                    <li class="learn_more_btn"><a href="">Learn More</a></li>
+                  </div>
+                </ul>
+              </span>
+              <span class="mobile-nav">
+                <ul>
+                  <li>
+                    <a class="mobile-search-icon search-icon" href=""></a>
+                  </li>
+                  <li>
+                    <a href="" class="mobile-nav-toggle">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                  </li>
+                </ul>
+              </span>
             </div>
+          </div>
         </nav>
-    </header>
-    <main>
+      </header>
+      <main>
         <section class="hero-container">
-            <div class="big-image"></div>
-            <div class="small-image-container">
-                <div class="small-image-1"></div>
-                <div class="small-image-2"></div>
-            </div>
+          <div class="big-image"></div>
+          <div class="small-image-container">
+            <div class="small-image-1"></div>
+            <div class="small-image-2"></div>
+          </div>
         </section>
         <section class="latest-news-container">
-            <h2>Latest news ></h2>
-            <div class="latest-news-box">
-                <div class="latest-news-inner">
-                    <a href=""><img src="assets/images/synd8-Recovered.jpg" alt=""></a>
-                    <h4><a href="">The Outer World will satiate your need for character-driven RPG experience </a></h4>
-                    <ul>
-                        <li><a href="">Super Jump Magazine</a></li>
-                        <li> 11 minutes ago</li>
-                    </ul>
-                </div>
-                <div class="latest-news-inner"></div>
-                <div class="latest-news-inner"></div>
-                <div class="latest-news-inner"></div>
-                <div class="latest-news-inner"></div>
-                <div class="latest-news-inner"></div>
-                <div class="latest-news-inner"></div>
-                <div class="latest-news-inner"></div>
+          <h2>Latest news ></h2>
+          <div class="latest-news-box">
+            <div class="latest-news-inner">
+              <a href=""
+                ><img src="assets/images/synd8-Recovered.jpg" alt=""
+              /></a>
+              <h4>
+                <a href=""
+                  >The Outer World will satiate your need for character-driven
+                  RPG experience
+                </a>
+              </h4>
+              <ul>
+                <li><a href="">Super Jump Magazine</a></li>
+                <li>11 minutes ago</li>
+              </ul>
             </div>
+            <div class="latest-news-inner">
+              <a href=""><img src="assets/images/sale.jpg" alt="Sale"/></a>
+              <h4>
+                <a href=""
+                  >Create a Responsive Website in Minutes with This
+                  Beginner-Friendly WordPress Builder</a
+                >
+              </h4>
+              <ul>
+                <li><a href="">TNW Deals</a></li>
+                <li>42 minutes ago</li>
+              </ul>
+            </div>
+            <div class="latest-news-inner">
+              <a href=""
+                ><img src="assets/images/bitcoin_today.jpg" alt="Bitcoin"
+              /></a>
+              <h4>
+                <a href=""
+                  >Satoshi Nakaboto: ‘Bitcoin rewards app Lolli among 100 most
+                  promising startups</a
+                >
+              </h4>
+              <ul>
+                <li><a href="">Satoshi Nakaboto</a></li>
+                <li>3 hours ago</li>
+              </ul>
+            </div>
+            <div class="latest-news-inner">
+              <a href=""
+                ><img src="assets/images/media-pak.jpg" alt="Media Pak"
+              /></a>
+              <h4>
+                <a href="">
+                  265 Indian fake news sites caught pushing anti-Pakistan
+                  propaganda</a
+                >
+              </h4>
+              <ul>
+                <li><a href="">Ravie Lakshmanan</a></li>
+                <li>4 hours ago</li>
+              </ul>
+            </div>
+            <div class="latest-news-inner">
+              <a href=""
+                ><img
+                  src="assets/images/panasonic-lumix.jpg"
+                  alt="Panasonic Lumix"
+              /></a>
+              <h4>
+                <a href=""
+                  >CHEAP: Wanna vlog and take pics? Then grab Lumix GH5 at 30%
+                  off
+                </a>
+              </h4>
+              <ul>
+                <li><a href="">Mix</a></li>
+                <li>5 hours ago</li>
+              </ul>
+            </div>
+            <div class="latest-news-inner">
+              <a href=""
+                ><img src="assets/images/google-maps.jpg" alt="Google maps"
+              /></a>
+              <h4>
+                <a href=""
+                  >Google Maps will now 'speak' the name of a place in the local
+                  language
+                </a>
+              </h4>
+              <ul>
+                <li><a href="">Ivan Mehta</a></li>
+                <li>6 hours ago</li>
+              </ul>
+            </div>
+            <div class="latest-news-inner">
+              <a href=""
+                ><img src="assets/images/Moto-Razr.png" alt="Motor Razr"
+              /></a>
+              <h4>
+                <a href=""
+                  >Moto Razr is back officially in a foldable avatar
+                </a>
+              </h4>
+              <ul>
+                <li><a href="">Ivan Mehta</a></li>
+                <li>9 hours ago</li>
+              </ul>
+            </div>
+            <div class="latest-news-inner">
+              <a href=""
+                ><img src="assets/images/facebook-ios.jpg" alt="FAcebook iOS"
+              /></a>
+              <h4>
+                <a href=""
+                  >Facebook fixed that bug that opened your camera without
+                  permission
+                </a>
+              </h4>
+              <ul>
+                <li><a href="">Napier Lopez</a></li>
+                <li>11 hours ago</li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section class="latest-funding-container">
-            <div class="head-text">
-                <span><h2>Latest funding rounds on Index.co ></h2></span>
-                <span class="head-text-right">
-                    <a href="">Add info | </a>
-                    <a href=""> Get updates by email | </a>
-                    <a href=""> See more</a>
-                </span>    
+          <div class="head-text">
+            <span><h2>Latest funding rounds on Index.co ></h2></span>
+            <span class="head-text-right">
+              <a href="">Add info | </a>
+              <a href=""> Get updates by email | </a>
+              <a href=""> See more</a>
+            </span>
+          </div>
+
+          <div class="latest-funding-box">
+            <div class="latest-funding-inner">
+              <div class="latest-funding-inner-1">
+                <div class="latest-funding-head"><h4>Yodel</h4></div>
+                <div class="latest-funding-text">
+                  <h4>$1M</h4>
+                  <h5>Seed fund</h5>
+                </div>
+              </div>
+              <div class="latest-funding-inner-2">
+                <a href="">
+                  <img src="assets/images/tag-solid.svg" alt="Tag icon" />
+                  <span>Social Media +2</span>
+                </a>
+                <a href="">
+                  <img
+                    src="assets/images/briefcase-solid.svg"
+                    alt="Briefcase icon"
+                  />
+                  <span>EXF Alpha</span>
+                </a>
+              </div>
+              <div class="latest-funding-inner-3">
+                <a href="">
+                  Yodel.io raises $1m to fuel US
+                  <div>on UKTN (UK Tech News</div>
+                </a>
+              </div>
+              <div class="latest-funding-float">
+                <img src="assets/images/y-model.jpg" alt="Yodel" />
+              </div>
             </div>
-            
-            <div class="latest-funding-box">
-                <div class="latest-funding-inner"></div>
-                <div class="latest-funding-inner"></div>
-                <div class="latest-funding-inner"></div>
-                <div class="latest-funding-inner"></div>
+            <div class="latest-funding-inner">
+              <div class="latest-funding-inner-1">
+                <div class="latest-funding-head"><h4>Jobiak</h4></div>
+                <div class="latest-funding-text">
+                  <h4>$2.3M</h4>
+                  <h5>Seed fund</h5>
+                </div>
+              </div>
+              <div class="latest-funding-inner-2">
+                <a href="">
+                  <img src="assets/images/tag-solid.svg" alt="Tag icon" />
+                  <span>Recruiting +2</span>
+                </a>
+                <a href="">
+                  <img
+                    src="assets/images/briefcase-solid.svg"
+                    alt="Briefcase icon"
+                  />
+                  <span>Rajat Gupta, +4</span>
+                </a>
+              </div>
+              <div class="latest-funding-inner-3">
+                <a href="">
+                  Jobiak Raises $2.3m in Seed Funding
+                  <div>on FinSMEs</div>
+                </a>
+              </div>
+              <div class="latest-funding-float">
+                <img src="assets/images/jobiak.jpg" alt="Jobiak" />
+              </div>
             </div>
+            <div class="latest-funding-inner">
+              <div class="latest-funding-inner-1">
+                <div class="latest-funding-head"><h4>cnvrg.io</h4></div>
+                <div class="latest-funding-text">
+                  <h4>$8M</h4>
+                  <h5>Series A</h5>
+                </div>
+              </div>
+              <div class="latest-funding-inner-2">
+                <a href="">
+                  <img src="assets/images/briefcase-solid.svg" alt="Tag icon" />
+                  <span>Hanaco Venture Capital</span>
+                </a>
+              </div>
+              <div class="latest-funding-inner-3">
+                <a href="">
+                  Cnvrg.io picks up $8M for its collaborative AI development
+                  platform
+                  <div>on SiliconAngle</div>
+                </a>
+              </div>
+              <div class="latest-funding-float">
+                <img src="assets/images/cnvrg.jpg" alt="Cnvrg.io" />
+              </div>
+            </div>
+            <div class="latest-funding-inner">
+              <div class="latest-funding-inner-1">
+                <div class="latest-funding-head"><h4>Liqid</h4></div>
+                <div class="latest-funding-text">
+                  <h4>$28M</h4>
+                  <h5>Venture Capital</h5>
+                </div>
+              </div>
+              <div class="latest-funding-inner-2">
+                <a href="">
+                  <img src="assets/images/tag-solid.svg" alt="Tag icon" />
+                  <span>Infrastructure</span>
+                </a>
+              </div>
+              <div class="latest-funding-inner-3">
+                <a href="">
+                  Liqid raises $28 million for adaptive resource management in
+                  datacenters
+                  <div>on VentureBeat</div>
+                </a>
+              </div>
+              <div class="latest-funding-float">
+                <img src="assets/images/tm.jpg" alt="TM" />
+              </div>
+            </div>
+          </div>
         </section>
         <section class="category-container">
-            <div class="category-grid"></div>
-            <div class="category-grid"></div>
-            <div class="category-grid"></div>
-            <div class="category-grid"></div>
-            <div class="category-grid"></div>
-            <div class="category-grid"></div>
-            <div class="category-grid"></div>
-            <div class="category-grid"></div>
+          <div class="category-grid">
+            <h2><a href="">Apps ></a></h2>
+            <div class="header-image">
+              <header>
+                <h5>Most Popular</h5>
+                <h3>
+                  <a href=""
+                    >Netflix partners with Nickelodeon as Disney+ ensnares
+                    millions</a
+                  >
+                </h3>
+                <ul>
+                  <li><a href="">Rachel Kaser</a></li>
+                  <li>18 hours ago</li>
+                </ul>
+              </header>
+            </div>
+            <div class="header-with-image">
+              <div class="header-with-image-text">
+                <h5>Latest</h5>
+                <h4>
+                  <a href=""
+                    >Facebook fixed that bug that opened your camera without
+                    permission</a
+                  >
+                </h4>
+              </div>
+              <div class="header-with-image-image">
+                <img src="assets/images/facebook-ios.jpg" alt="" />
+              </div>
+            </div>
+            <div class="cat-links-container">
+              <div class="cat-info-links">
+                <h4>
+                  <a href=""
+                    >Netflix partners with Nickelodeon as Disney+ ensnares
+                    millions</a
+                  >
+                </h4>
+              </div>
+              <div class="cat-info-links">
+                <h4>
+                  <a href=""
+                    >Facebook Pay will let you make payments through Messenger,
+                    WhatsApp, and Instagram</a
+                  >
+                </h4>
+              </div>
+              <div class="cat-info-links">
+                <h4>
+                  <a href="">Disney+ launches to a wave of technical issues</a>
+                </h4>
+              </div>
+              <div class="cat-info-links">
+                <h4>
+                  <a href=""
+                    >Facebook is secretly using your iPhone's camera as you
+                    scroll your feed</a
+                  >
+                </h4>
+              </div>
+              <div class="cat-info-links">
+                <h4>
+                  <a href=""
+                    >Why some accounts are getting banned for 'suspicious' group
+                    names on WhatsApp
+                  </a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="category-grid">
+                <h2><a href="">Gear ></a></h2>
+                <div class="header-image">
+                  <header>
+                    <h5>Most Popular</h5>
+                    <h3>
+                      <a href=""
+                        >FCC leaks the new Moto RAZR, including several new details</a
+                      >
+                    </h3>
+                    <ul>
+                      <li><a href="">Napier Lopez</a></li>
+                      <li>17 hours ago</li>
+                    </ul>
+                  </header>
+                </div>
+                <div class="header-with-image">
+                  <div class="header-with-image-text">
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href=""
+                        >CHEAP: Wanna vlog and take pics? Then grab Lumix GH5 at 30% off</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="header-with-image-image">
+                    <img src="assets/images/panasonic-lumix.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="cat-links-container">
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook Pay will let you make payments through Messenger,
+                        WhatsApp, and Instagram</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href="">Disney+ launches to a wave of technical issues</a>
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook is secretly using your iPhone's camera as you
+                        scroll your feed</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Why some accounts are getting banned for 'suspicious' group
+                        names on WhatsApp
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+          </div>
+          <div class="category-grid">
+                <h2><a href="">Apps ></a></h2>
+                <div class="header-image">
+                  <header>
+                    <h5>Most Popular</h5>
+                    <h3>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h3>
+                    <ul>
+                      <li><a href="">Rachel Kaser</a></li>
+                      <li>18 hours ago</li>
+                    </ul>
+                  </header>
+                </div>
+                <div class="header-with-image">
+                  <div class="header-with-image-text">
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href=""
+                        >Facebook fixed that bug that opened your camera without
+                        permission</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="header-with-image-image">
+                    <img src="assets/images/facebook-ios.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="cat-links-container">
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook Pay will let you make payments through Messenger,
+                        WhatsApp, and Instagram</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href="">Disney+ launches to a wave of technical issues</a>
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook is secretly using your iPhone's camera as you
+                        scroll your feed</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Why some accounts are getting banned for 'suspicious' group
+                        names on WhatsApp
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+          </div>
+          <div class="category-grid">
+                <h2><a href="">Apps ></a></h2>
+                <div class="header-image">
+                  <header>
+                    <h5>Most Popular</h5>
+                    <h3>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h3>
+                    <ul>
+                      <li><a href="">Rachel Kaser</a></li>
+                      <li>18 hours ago</li>
+                    </ul>
+                  </header>
+                </div>
+                <div class="header-with-image">
+                  <div class="header-with-image-text">
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href=""
+                        >Facebook fixed that bug that opened your camera without
+                        permission</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="header-with-image-image">
+                    <img src="assets/images/facebook-ios.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="cat-links-container">
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook Pay will let you make payments through Messenger,
+                        WhatsApp, and Instagram</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href="">Disney+ launches to a wave of technical issues</a>
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook is secretly using your iPhone's camera as you
+                        scroll your feed</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Why some accounts are getting banned for 'suspicious' group
+                        names on WhatsApp
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+          </div>
+          <div class="category-grid">
+                <h2><a href="">Apps ></a></h2>
+                <div class="header-image">
+                  <header>
+                    <h5>Most Popular</h5>
+                    <h3>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h3>
+                    <ul>
+                      <li><a href="">Rachel Kaser</a></li>
+                      <li>18 hours ago</li>
+                    </ul>
+                  </header>
+                </div>
+                <div class="header-with-image">
+                  <div class="header-with-image-text">
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href=""
+                        >Facebook fixed that bug that opened your camera without
+                        permission</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="header-with-image-image">
+                    <img src="assets/images/facebook-ios.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="cat-links-container">
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook Pay will let you make payments through Messenger,
+                        WhatsApp, and Instagram</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href="">Disney+ launches to a wave of technical issues</a>
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook is secretly using your iPhone's camera as you
+                        scroll your feed</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Why some accounts are getting banned for 'suspicious' group
+                        names on WhatsApp
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+          </div>
+          <div class="category-grid">
+                <h2><a href="">Apps ></a></h2>
+                <div class="header-image">
+                  <header>
+                    <h5>Most Popular</h5>
+                    <h3>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h3>
+                    <ul>
+                      <li><a href="">Rachel Kaser</a></li>
+                      <li>18 hours ago</li>
+                    </ul>
+                  </header>
+                </div>
+                <div class="header-with-image">
+                  <div class="header-with-image-text">
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href=""
+                        >Facebook fixed that bug that opened your camera without
+                        permission</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="header-with-image-image">
+                    <img src="assets/images/facebook-ios.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="cat-links-container">
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook Pay will let you make payments through Messenger,
+                        WhatsApp, and Instagram</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href="">Disney+ launches to a wave of technical issues</a>
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook is secretly using your iPhone's camera as you
+                        scroll your feed</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Why some accounts are getting banned for 'suspicious' group
+                        names on WhatsApp
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+          </div>
+          <div class="category-grid">
+                <h2><a href="">Apps ></a></h2>
+                <div class="header-image">
+                  <header>
+                    <h5>Most Popular</h5>
+                    <h3>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h3>
+                    <ul>
+                      <li><a href="">Rachel Kaser</a></li>
+                      <li>18 hours ago</li>
+                    </ul>
+                  </header>
+                </div>
+                <div class="header-with-image">
+                  <div class="header-with-image-text">
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href=""
+                        >Facebook fixed that bug that opened your camera without
+                        permission</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="header-with-image-image">
+                    <img src="assets/images/facebook-ios.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="cat-links-container">
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook Pay will let you make payments through Messenger,
+                        WhatsApp, and Instagram</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href="">Disney+ launches to a wave of technical issues</a>
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook is secretly using your iPhone's camera as you
+                        scroll your feed</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Why some accounts are getting banned for 'suspicious' group
+                        names on WhatsApp
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+          </div>
+          <div class="category-grid">
+                <h2><a href="">Apps ></a></h2>
+                <div class="header-image">
+                  <header>
+                    <h5>Most Popular</h5>
+                    <h3>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h3>
+                    <ul>
+                      <li><a href="">Rachel Kaser</a></li>
+                      <li>18 hours ago</li>
+                    </ul>
+                  </header>
+                </div>
+                <div class="header-with-image">
+                  <div class="header-with-image-text">
+                    <h5>Latest</h5>
+                    <h4>
+                      <a href=""
+                        >Facebook fixed that bug that opened your camera without
+                        permission</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="header-with-image-image">
+                    <img src="assets/images/facebook-ios.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="cat-links-container">
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Netflix partners with Nickelodeon as Disney+ ensnares
+                        millions</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook Pay will let you make payments through Messenger,
+                        WhatsApp, and Instagram</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href="">Disney+ launches to a wave of technical issues</a>
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Facebook is secretly using your iPhone's camera as you
+                        scroll your feed</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="cat-info-links">
+                    <h4>
+                      <a href=""
+                        >Why some accounts are getting banned for 'suspicious' group
+                        names on WhatsApp
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+          </div>
         </section>
         <section class="latest-news-container">
-                <div class="head-text">
-                        <span><h2>Latest deals ></h2></span>
-                        <span class="head-text-right">
-                            <a href="">See all Deals</a>
-                        </span>    
-                    </div>
-                <div class="latest-news-box">
-                    <div class="latest-news-inner">
-                        <a href=""><img src="assets/images/synd8-Recovered.jpg" alt=""></a>
-                        <h4><a href="">The Outer World will satiate your need for character-driven RPG experience </a></h4>
-                        <ul>
-                            <li><a href="">Super Jump Magazine</a></li>
-                            <li> 11 minutes ago</li>
-                        </ul>
-                    </div>
-                    <div class="latest-news-inner"></div>
-                    <div class="latest-news-inner"></div>
-                    <div class="latest-news-inner"></div>
-                    <div class="latest-news-inner"></div>
-                    <div class="latest-news-inner"></div>
-                    <div class="latest-news-inner"></div>
-                    <div class="latest-news-inner"></div>
-                </div>
-            </section>
-    </main>
-    <footer class="footer-container">
+          <div class="head-text">
+            <span><h2>Latest deals ></h2></span>
+            <span class="head-text-right">
+              <a href="">See all Deals</a>
+            </span>
+          </div>
+          <div class="latest-news-box">
+            <div class="latest-news-inner">
+              <a href=""
+                ><img src="assets/images/synd8-Recovered.jpg" alt="Recovered"
+              /></a>
+              <h4>
+                <a href=""
+                  >The Outer World will satiate your need for character-driven
+                  RPG experience</a
+                >
+              </h4>
+              <ul>
+                <li><a href="">Super Jump Magazine</a></li>
+                <li>11 minutes ago</li>
+              </ul>
+            </div>
+            <div class="latest-news-inner">
+              <a href=""><img src="assets/images/sale.jpg" alt="Sale"/></a>
+              <h4>
+                <a href=""
+                  >Create a Responsive Website in Minutes with This
+                  Beginner-Friendly WordPress Builder</a
+                >
+              </h4>
+              <ul>
+                <li><a href="">TNW Deals</a></li>
+                <li>42 minutes ago</li>
+              </ul>
+            </div>
+            <div class="latest-news-inner"></div>
+            <div class="latest-news-inner"></div>
+            <div class="latest-news-inner"></div>
+            <div class="latest-news-inner"></div>
+            <div class="latest-news-inner"></div>
+            <div class="latest-news-inner"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer-container">
         <div class="footer-upper"></div>
         <div class="footer-lower"></div>
-    </footer>
-</div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>

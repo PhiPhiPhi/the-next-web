@@ -446,9 +446,8 @@ nav {
 .latest-news-container {
   margin: 30px auto;
   width: 70%;
-  height: 530px;
+  height: 590px;
   max-height: 600px;
-  background-color: seashell;
   display: flex;
   flex-direction: column;
 }
@@ -479,7 +478,6 @@ nav {
 .latest-news-inner {
   width: 294px;
   height: 251px;
-  background-color: lime;
   margin: 15px;
 }
 
@@ -499,7 +497,7 @@ nav {
   width: 70%;
   height: 350px;
   max-height: 600px;
-  background-color: seashell;
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
 }
@@ -529,35 +527,211 @@ nav {
 .latest-funding-inner {
   width: 294px;
   height: 251px;
-  background-color: yellow;
+  background-color: rgba(255, 67, 34, 0.082);
   margin: 15px;
+}
+
+.latest-funding-inner-1 {
+  width: 100%;
+  height: 33.3%;
+}
+
+.latest-funding-inner-2 {
+  background-color: rgba(255, 255, 255, 0.671);
+  width: 100%;
+  height: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 15px;
+}
+
+.latest-funding-inner-2 a > img {
+  width: 16px;
+  height: 16px;
+}
+
+.latest-funding-inner-2 a > span {
+  color: #555;
+}
+
+.latest-funding-inner-3 {
+  background-color: rgba(255, 255, 255, 0.671);
+  width: 100%;
+  height: 33.3%;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding: 15px;
+  font-size: 12px;
+  display: block;
+}
+
+.latest-funding-inner-3 a {
+  color: #555;
+  font-weight: bolder;
+}
+
+.latest-funding-inner-3 a > div {
+  font-weight: lighter;
+}
+
+.latest-funding-float {
+  position: relative;
+  bottom: 235px;
+  left: 20px;
+  width: 20%;
+  height: 20%;
+  background-color: white;
+}
+
+.latest-funding-float > img {
+  width: 100%;
+  height: 100%;
+}
+
+.latest-funding-head {
+  background-color: #f42;
+  color: white;
+  height: 40%;
+}
+
+.latest-funding-head > h4 {
+  margin-left: 100px;
+  padding-top: 7px;
+}
+
+.latest-funding-text {
+  height: 100%;
+  width: 100%;
+  color: #000;
+  margin-left: 100px;
+  padding-top: 5px;
+}
+
+.latest-funding-text > h5 {
+  color: #000;
+  opacity: 0.5;
+  text-transform: uppercase;
 }
 
 .category-container {
   width: 70%;
   height: 2167px;
-  background-color: #f42;
   margin: auto;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .category-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  background-color: white;
   height: 700px;
   width: 32%;
-  background-color: chartreuse;
   margin-top: 5px;
+}
+
+.header-image {
+  width: 100%;
+  height: 35%;
+  background-color: aquamarine;
+  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/netflix-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-image header {
+  height: 40%;
+  margin: 0 0 10px 10px;
+  color: white;
+}
+
+.header-image header > h5 {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.header-image header > h3 {
+  padding-bottom: 7px;
+}
+
+.header-image header h3 > a {
+  color: white;
+}
+
+.header-image header h3 > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.header-image header ul li {
+  display: inline;
+  padding: 0 5px 0 0;
+  color: rgb(114, 114, 114);
+}
+
+.header-image header ul li > a {
+  color: rgb(114, 114, 114);;
+}
+
+.header-image header ul li > a:hover {
+  color: white;
+}
+
+.header-with-image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 15%;
+}
+
+.header-with-image-text {
+  background-color: rgba(255, 67, 34, 0.082);
+  width: 70%;
+  height: 100%;
+  padding: 12px;
+}
+
+.header-with-image-text > h5 {
+  color: red;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.header-with-image-image {
+  width: 30%;
+  height: 100%;
+}
+
+.header-with-image-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.cat-links-container {
+  height: 43%;
+} 
+
+.cat-info-links {
+  border-bottom: 1px solid rgb(224, 222, 222);
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+
+.cat-info-links > h4 {
+  margin: 8px;
+}
+
+.cat-info-links h4 > a {
+  color: #555;
+  font-weight: lighter;
 }
 
 .footer-container {
   width: 100%;
   height: 258px;
-  /* background-color: mediumvioletred; */
   margin-top: 100px;
 }
 
@@ -572,3 +746,4 @@ nav {
   width: 100%;
   height: 30%;
 }
+
