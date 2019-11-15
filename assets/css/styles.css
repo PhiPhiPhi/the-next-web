@@ -91,7 +91,7 @@ nav {
   flex-direction: row;
   height: 100%;
   background: #fff;
-  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
 }
 
 .navbars {
@@ -412,7 +412,7 @@ nav {
   height: 98%;
   width: 65%;
   background-color: deeppink;
-  background-image: linear-gradient(to bottom, rgba(235, 72, 159, 0.7), rgb(245, 8, 8, 0.7), rgb(0, 0, 0, 1)), url('../images/const.jpg');
+  background-image: linear-gradient(to bottom, rgba(235, 72, 159, 0.7), rgb(245, 8, 8, 0.7), rgb(0, 0, 0, 1)), url('../images/qualcomm.png');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 4px;
@@ -429,7 +429,7 @@ nav {
 
 .small-image-1 {
   background-color: greenyellow;
-  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/map.png');
+  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/seoul.png');
   background-repeat: no-repeat;
   background-size: 100%;
   height: 49%;
@@ -437,8 +437,7 @@ nav {
 
 .small-image-2 {
   background-color: darkorange;
-  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/anonymous-group-bitcoin.jpg');
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/Laviosa.jpg');
   background-size: 100%;
   height: 49%;
 }
