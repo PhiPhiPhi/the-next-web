@@ -1033,7 +1033,10 @@ flex-direction: column;
 .footer-lower {
   background-color: #000;
   width: 100%;
-  height: 30%;
+  /* height: 30%; */
+  padding: 3em 0;
+  color: #aaa;
+  font-size: 13px;
 }
 
 @media (min-width: 1600px)  {
@@ -1092,7 +1095,6 @@ flex-direction: column;
 
 .icon {
  background-repeat: no-repeat;
-
   background-size: auto;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
   width: 16px;
@@ -1102,6 +1104,15 @@ flex-direction: column;
     margin-right: 4px;
 }
 
+.social_icon {
+
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block !important;
+}
 .icon-clock-light {
   background-position: -160px -160px;
   opacity: 0.5;
@@ -1111,6 +1122,29 @@ flex-direction: column;
   background-position: -912px -912px;
   opacity: 0.5;
 }
+
+.icon-facebook-light {
+  background-position: -272px -272px;
+}
+.icon-twitter-light {
+  background-position: -1024px -1024px;
+}
+.icon-youtube-light {
+  background-position: -1280px -1280px;
+}
+.icon-instagram-light {
+  background-position: -416px -416px;
+}
+.icon-pinterest-light {
+  background-position: -672px -672px;
+}
+.icon-rss-light {
+  background-position: -816px -816px;
+}
+.icon-mail-light {
+  background-position: -576px -576px;
+}
+
 
 @media (min-width: 1024px) {
 .latest-news-container {
@@ -1127,4 +1161,93 @@ flex-direction: column;
     margin-bottom: 2em;
     padding-top: 24px;
     margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+.footer-links-social li {
+    margin: 0 8px;
+    display: inline-block;
+}
+}
+
+.footer-links-social li a {
+  background: #333;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+    width: 40px;
+}
+
+.footer-links-social{
+  list-style-type: none;
+  margin-bottom: 1.5em;
+  margin: 0 auto;
+  padding: 3em 0 2em;
+  width: fit-content;
+
+}
+
+.footer-links-menu {
+  list-style-type: none;
+  margin-bottom: 1.5em;
+  margin: 0 auto;
+  padding: 0em 0 2em;
+  width: fit-content;
+}
+
+.footer-links-menu li {
+
+  
+
+font-family: Shentox,sans-serif;
+font-weight: 500;
+text-transform: uppercase;
+display: inline-block;
+font-size: 13px;
+line-height: 24px;
+margin: 0 4px;
+
+}
+
+.footer-links-menu li {
+  color: #aaa;
+}
+
+.footer-links-social li {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+
+.footer-upper-content {
+  margin: 0 auto;
+    max-width: 1192px;
+    padding: 0 20px;
+}
+
+.fl-wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.fl-wrapper span b {
+  color: #f42;
+}
+
+.footer-logoTNW {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+
+.footer-logoStackPath {
+  display: inline-block;
+    height: 9px;
+    margin-right: 1px;
+    vertical-align: baseline;
 }
