@@ -614,7 +614,83 @@ header .cover-byline{
   flex-direction: column;
 }
 
-.category-grid > h2 > a, .latest-funding-container .head-text span > h2, .latest-news-container > h2 {
+.lnc-2-box {
+  display: flex;
+  flex-direction: column;
+}
+.ln2-row {
+  display: flex;
+  justify-content: space-between;
+}
+.lni-2 {
+  width: 23.5%;
+  position: relative;
+}
+.lni-2 h4 a {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-family: "ARS Maquette Bold";
+}
+
+.lni-2 ul {
+
+  line-height: 20px;
+  padding-top: 4px;
+
+}
+
+.old_price {
+  font-size: 13px;
+  text-decoration: line-through;
+  margin-right: 4px;
+  color: #aaa;
+}
+.ln2-row2 {
+  margin-top: 30px;
+}
+
+.new_price {
+  font-size: 16px;
+  color: #555;
+}
+
+.lni-2 ul li {
+  display: inline;
+}
+.discount {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    z-index: 10;
+}
+.discount_text {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
+.lni-2  a img {
+  width: 270px;
+}
+ .category-grid > h2 > a, .latest-funding-container .head-text span > h2, .latest-news-container .head-text span > h2, .latest-news-container > h2 {
   color: #f42;
   /* padding: 0 18px; */
   font-weight: 700;
@@ -688,6 +764,7 @@ header .cover-byline{
 
   display: flex;
   flex-direction: column;
+  margin: 70px 0;
 }
 
 .head-text {
@@ -707,7 +784,7 @@ header .cover-byline{
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
-  height: 560px;
+
   /* width: 100%;*/
 }
 
@@ -884,7 +961,6 @@ flex-direction: column;
 }
 
 
-
 .header-image header ul li > a:hover {
   color: white;
 }
@@ -1050,4 +1126,5 @@ flex-direction: column;
 .latest-news-container {
     margin-bottom: 2em;
     padding-top: 24px;
+    margin-top: 100px;
 }
