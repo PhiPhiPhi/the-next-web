@@ -37,6 +37,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family:
     'ARS Maquette',
     'Helvetica Neue',
@@ -53,9 +55,9 @@ li {
   list-style: none;
 }
 
-header {
+/*header {
   height: 86px;
-}
+}*/
 
 .nav_logo {
   top: 0;
@@ -409,31 +411,94 @@ nav {
 }
 
 .big-image {
-  height: 98%;
-  width: 65%;
-  background-color: deeppink;
-  background-image: linear-gradient(to bottom, rgba(235, 72, 159, 0.7), rgb(245, 8, 8, 0.7), rgb(0, 0, 0, 1)), url('../images/qualcomm.png');
+  height: 100%;
+  width: 66.6666%;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 4px;
+  margin: 8px 4px 4px 8px;
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   flex-wrap: wrap;
+  overflow: hidden;
+  /* justify-content: space-between; */
+  position: relative;
+  /* padding: 4px; */
+  /* padding: 0; */
+  /* position: absolute;*/
+}
+.cover-gradient {
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  /* bottom: 4px; */
+  /* left: 8px; */
+  mix-blend-mode: lighten;
+  pointer-events: none;
+  /* position: absolute; */
+  /* right: 4px; */
+  /* top: 4px; */
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
 }
 
+.cover-black {
+  transition: background-color .4s ease;
+  background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  will-change: background-color;
+  z-index: -2;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  /* bottom: 4px; */
+  /* left: 4px; */
+  /* position: absolute; */
+  /* top: 4px; */
+  /* right: 4px; */
+  width: 100%;
+  height: 100%;
+}
+
+.cover-image {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  z-index: -5;
+  /* bottom: 4px; */
+  /* left: 4px; */
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 1;
+  /* top: 4px; */
+  width: 100%;
+  height: 100%;
+  /* right: 4px; */
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Copy-of-Copy-of-Copy-of-...-3-796x417.png);
+  transition: .4s ease;
+}
 .big-image-text {
   padding: 20px;
   color: white;
   width: 100%;
-  height: 35%;
-  margin-bottom: 40px;
+  height: 40%;
+  /* margin-bottom: 20px; */
+  bottom: 20px;
+  position: absolute;
 }
 
 .date {
   color: white;
-  position: absolute;
-  top: 110px;
-  right: 710px;
+  /* position: absolute; */
+  /* top: 110px; */
+  /* right: 710px; */
+  margin: 20px;
+  font-size: 14px;
+
+
 }
 
 .small-image-text header > h5,
@@ -444,36 +509,53 @@ nav {
 
 .big-image-text header h3 > a {
   color: white;
-  font-size: 50px;
+  font-size: 56px;
+  line-height: 1;
   font-weight: 700;
 }
 
 .small-image-text header h3 > a {
   color: white;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.015em;
 }
 
-.small-image-text header ul li,
-.big-image-text header ul li {
-  color: #555;
-  display: inline;
-} 
+.big-image-text .cover-byline {
+  position: relative;
+    top: 25px;
+}
 
-.small-image-text header ul li > a,
-.big-image-text header ul li > a {
-  color: #555;
+header .cover-byline{
+  position: relative;
+    top: 10px;
+}
+
+.cover-byline-item {
+  margin-right: 5px;
+}
+
+
+
+
+.cover-byline li a, .cover-byline li, .cover-byline li i
+{
+  color: hsla(0,0%,100%,.6);
+  display: inline;
+  font-size: 13px;
 }
 
 .small-image-text header ul li > a:hover,
 .big-image-text header ul li > a:hover {
   color: white;
+
 }
 
 .small-image-container {
-  height: 98%;
-  width: 34%;
-  margin: 4px;
+  height: 100%;
+  width: 33.3333%;
+  margin: 8px 8px 4px 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -484,20 +566,22 @@ nav {
   background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/seoul.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 49%;
+  height: 50%;
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin: 0 0 4px 0 ;
 }
 
 .small-image-2 {
   background-color: darkorange;
   background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/Laviosa.jpg');
   background-size: 100%;
-  height: 49%;
+  height: 50%;
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin: 4px 0 0 0 ;
 }
 
 .small-image-text {
@@ -815,3 +899,78 @@ nav {
   height: 30%;
 }
 
+@media (min-width: 1600px)  {
+.cover-logo {
+    background-size: contain;
+    height: 96px;
+
+  }
+
+}
+
+@media (min-width: 1024px) {
+ .cover-logo {
+  color: #fff;
+  /* position: absolute; */
+  /* right: 24px; */
+ 
+  z-index: 5;
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+  background-size: contain;
+  left: 0px;
+  /* max-width: 50%; */
+  height: 100%;
+  max-height: 112px;
+  line-height: 1;
+  width: 50%;
+  top: 0px;
+  pointer-events: none;
+  margin: 20px;
+  text-align: right;
+}
+
+}
+
+.cover-title a {
+  font-family: "Avalon Bold";
+} 
+
+.cover-section {
+  font-family: 'Shentox',sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+ 
+    line-height: 1.5;
+    letter-spacing: -.015em;
+}
+
+.big-image-top {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  /* align-items: center; */
+  justify-content: space-between;
+  position: absolute;
+}
+
+.icon {
+ background-repeat: no-repeat;
+
+  background-size: auto;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
+  width: 16px;
+  height: 16px;
+  display: inline-block !important;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.icon-clock-light {
+  background-position: -160px -160px;
+  opacity: 0.5;
+}
+
+.icon-share-light {
+  background-position: -912px -912px;
+  opacity: 0.5;
+}
