@@ -614,7 +614,7 @@ header .cover-byline{
   flex-direction: column;
 }
 
-.latest-funding-container .head-text span > h2, .latest-news-container > h2 {
+.category-grid > h2 > a, .latest-funding-container .head-text span > h2, .latest-news-container > h2 {
   color: #f42;
   /* padding: 0 18px; */
   font-weight: 700;
@@ -625,7 +625,7 @@ header .cover-byline{
   font-family: 'Avalon Bold',sans-serif;
 }
 
-.latest-funding-container .head-text span > h2::after, .latest-news-container h2::after {
+.category-grid > h2:after, .latest-funding-container .head-text span > h2::after, .latest-news-container h2::after {
   background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
   background-size: 16px 16px;
   content: "";
@@ -700,7 +700,7 @@ header .cover-byline{
 }
 
 .latest-funding-container .head-text span > h2 {
-  color: red;
+  color: #f42;;
 }
 
 .latest-funding-box {
@@ -801,14 +801,15 @@ header .cover-byline{
 }
 
 .category-container {
-  width: 70%;
-  height: 2167px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+display: flex;
+flex-direction: column;
 }
 
+.cg-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
 .category-grid {
   background-color: white;
   height: 700px;
@@ -816,9 +817,13 @@ header .cover-byline{
   margin-top: 5px;
 }
 
+.header-with-image-text {
+  font-size: 14px;
+}
+
 .header-image {
   width: 100%;
-  height: 35%;
+  height: 40%;
   background-color: aquamarine;
   background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgb(0, 0, 0, 1)), url('../images/netflix-mobile.jpg');
   background-repeat: no-repeat;
@@ -834,9 +839,19 @@ header .cover-byline{
   color: white;
 }
 
-.header-image header > h5 {
+.cg-byline {
+  color: hsla(0,0%,100%,.6);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.header-image header > h5, .header-with-image-text > h5 {
+  font-family: Shentox,sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  letter-spacing: .04em;
+  line-height: 1.5;
 }
 
 .header-image header > h3 {
@@ -845,6 +860,7 @@ header .cover-byline{
 
 .header-image header h3 > a {
   color: white;
+  font-family: "ARS Maquette Bold";
 }
 
 .header-image header h3 > a:hover {
@@ -854,13 +870,20 @@ header .cover-byline{
 
 .header-image header ul li {
   display: inline;
-  padding: 0 5px 0 0;
-  color: rgb(114, 114, 114);
+  color: hsla(0,0%,100%,.6);
+
 }
 
 .header-image header ul li > a {
-  color: rgb(114, 114, 114);;
+  color: hsla(0,0%,100%,.6);
 }
+
+.header-image header ul li > a::after {
+  content: "\B7";
+    margin: 0 4px;
+}
+
+
 
 .header-image header ul li > a:hover {
   color: white;
@@ -881,9 +904,10 @@ header .cover-byline{
 }
 
 .header-with-image-text > h5 {
-  color: red;
+  color: #f42;
   margin-bottom: 5px;
   text-transform: uppercase;
+  font-size: 13px;
 }
 
 .header-with-image-image {
@@ -902,7 +926,6 @@ header .cover-byline{
 
 .cat-info-links {
   border-bottom: 1px solid rgb(224, 222, 222);
-  height: 20%;
   width: 100%;
   display: flex;
 }
@@ -914,6 +937,9 @@ header .cover-byline{
 .cat-info-links h4 > a {
   color: #555;
   font-weight: lighter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .footer-container {
