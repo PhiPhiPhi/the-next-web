@@ -33,12 +33,17 @@
   font-weight: 400;
 }
 
-* {
+
+ 
+
+*, :after, :before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  outline: none;
+  text-rendering: optimizeLegibility;
   font-family:
     'ARS Maquette',
     'Helvetica Neue',
@@ -58,6 +63,13 @@ li {
 /*header {
   height: 86px;
 }*/
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+
+}
 
 .nav_logo {
   top: 0;
@@ -597,17 +609,37 @@ header .cover-byline{
 }
 
 .latest-news-container {
-  margin: 30px auto;
-  width: 70%;
-  height: 590px;
-  max-height: 600px;
+
   display: flex;
   flex-direction: column;
 }
 
 .latest-news-container > h2 {
-  color: red;
-  padding: 0 18px;
+  color: #f42;
+  /* padding: 0 18px; */
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  font-size: 28px;
+  letter-spacing: -.015em;
+  font-family: 'Avalon Bold',sans-serif;
+}
+
+.latest-news-container h2::after {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+  background-size: 16px 16px;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  position: relative;
+  top: 0;
+  width: 16px;
+}
+
+.lnb-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .latest-news-box {
@@ -628,21 +660,28 @@ header .cover-byline{
   color: black;
 }
 
-.latest-news-inner {
-  width: 294px;
-  height: 251px;
-  margin: 15px;
+.lni-container {
+  width: 23.5%;
 }
+
+.latest-news-inner {
+ 
+}
+
+.latest-news-inner ul {
+  padding-top: 4px;
+}
+
 
 .latest-news-inner ul li{
   display: inline;
   font-size: 13px;
-  color: #555;
+  color: #aaa;
   padding: 0 7px 0 0;
 }
 
 .latest-news-inner ul li a {
-  color: #555;
+  color: #aaa;
 }
 
 .latest-funding-container {
@@ -973,4 +1012,20 @@ header .cover-byline{
 .icon-share-light {
   background-position: -912px -912px;
   opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+.latest-news-container {
+    margin-bottom: 4em;
+}
+}
+
+@media (min-width: 768px) {
+.latest-news-container {
+    margin-bottom: 3em;
+}
+}
+.latest-news-container {
+    margin-bottom: 2em;
+    padding-top: 24px;
 }
