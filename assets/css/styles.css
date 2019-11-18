@@ -1235,6 +1235,159 @@ margin: 0 4px;
 
 
 @media (max-width: 768px) {
+  
+  .latest-news-box {
+    height: unset;
+    flex-direction: column;
+  }
+  .hero-container {
+    height: auto;
+    max-height: unset;
+  }
+  .latest-news-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0;
+    padding: 8px 0;
+    position: relative;
+    height: 90px;
+}
+.lni-2 a, .latest-news-inner a {
+  width: 75px;
+ 
+}
+.head-text-right{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 0;
+}
+.lni-2-desc, .latest-news-inner-desc {
+  font-size: 14px!important;
+line-height: 18px!important;
+width: 80%;
+}
+.head-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+.category-grid {
+  width: 100%;
+}
+
+.category-grid-last {
+  display: none;
+}
+.lnc-2 .head-text {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.cg-row {
+  flex-direction: column;
+}
+.latest-funding-inner-last {
+  display: none;
+}
+.ln2-row {
+  flex-direction: column;
+}
+.lni-2 {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+  padding: 8px 0;
+  position: relative;
+  height: 90px;
+}
+
+.ln2-row2 {
+  margin-top: 0;
+}
+.fl-wrapper span {
+  display: block;
+}
+.team_footer_nav {
+  display: none !important;
+}
+.footer-links-social li {
+  margin: 0 2px;
+}
+
+.footer-links-social .footer-links-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.discount {
+  display: none;
+}
+
+.latest-funding-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-funding-inner {
+  width: 100%;
+}
+
+.latest-funding-float {
+
+  width: 60px;
+  height: 60px;
+
+}
+.lni-2-desc ul li, .latest-news-inner-desc ul li {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 18px;
+}
+.lnc-2-box div a > img, .latest-news-box div a > img {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+  .lnb-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.lni-container {
+  width: 100%;
+  height: 100%;
+}
+
+  .nav_logo {
+    
+    left: 0;
+    height: 86px;
+    top: 0;
+    width: 110px;
+    display: unset;
+  }
+  
+  .nav_logo_link img {
+    transition: transform .4s ease,-webkit-transform .4s ease;
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 66px;
+    z-index: 999;
+  }
+.main-nav-left {
+ 
+}
+.countdown_bloc #ticket-sale, .countdown_bloc #conf-open, .countdown_bloc .learn_more_btn, #timer {
+  display: none;
+}
+.top-nav-right {
+  visibility: hidden;
+}
 
   .top-nav {
     display: none;
@@ -1289,6 +1442,10 @@ margin: 0 4px;
   }
   .small-image-text header h3 > a, .big-image-text header h3 > a {
     font-size: 20px;
+  }
+  .small-image-text {
+    height: auto;
+    margin-bottom: 10px;
   }
 
 }
