@@ -131,6 +131,7 @@ nav {
 }
 
 .main-nav-left ul li,
+.main-nav-right div span,
 .main-nav-right ul li,
 .top-nav-left ul li,
 .top-nav-right ul li {
@@ -174,6 +175,7 @@ nav {
   padding: 10px 10px 1px 12px;
 }
 
+.main-nav-right div span a,
 .main-nav-right ul li a {
   font-family:
     'Shentox',
@@ -185,6 +187,7 @@ nav {
   padding: 10px 0 3px 0;
 }
 
+.main-nav-right div,
 .main-nav-right ul {
   display: flex;
   align-items: baseline;
