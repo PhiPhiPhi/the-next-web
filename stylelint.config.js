@@ -77,6 +77,8 @@ module.exports = {
     "media-query-list-comma-newline-after": "always-multi-line",
     "media-query-list-comma-space-after": "always-single-line",
     "media-query-list-comma-space-before": "never",
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": true,
     "no-eol-whitespace": true,
     "no-missing-end-of-source-newline": true,
     "number-leading-zero": "always",

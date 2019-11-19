@@ -137,10 +137,6 @@ nav {
   display: inline-block;
 }
 
-.top-nav-left li:first-child {
-  margin-left: 20px;
-}
-
 .main-nav-right li a,
 .main-nav-left li a,
 .top-nav-right li a,
@@ -261,6 +257,10 @@ nav {
   top: 3px;
 }
 
+.top-nav-left li:first-child {
+  margin-left: 20px;
+}
+
 .mobile-nav-toggle span {
   transition: 0.4s;
   background-color: #f42;
@@ -348,8 +348,6 @@ nav {
   will-change: background-color;
   z-index: -2;
   position: absolute;
-  width: inherit;
-  height: inherit;
   width: 100%;
   height: 100%;
 }
@@ -359,8 +357,6 @@ nav {
   background-size: cover;
   background-position: 50%;
   z-index: -5;
-  width: inherit;
-  height: inherit;
   position: absolute;
   opacity: 1;
   width: 100%;
@@ -471,13 +467,12 @@ header .cover-byline {
   margin-bottom: 60px;
 }
 
-.small-image-text header h3 > a {
-  color: white;
-}
-
 .latest-news-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2em;
+  padding-top: 24px;
+  margin-top: 100px;
 }
 
 .lnc-2-box {
@@ -500,7 +495,7 @@ header .cover-byline {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 0;
-  font-family: "ARS Maquette Bold";
+  font-family: "ARS Maquette Bold", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .lni-2 ul {
@@ -613,10 +608,6 @@ header .cover-byline {
 
 .lni-container {
   width: 23.5%;
-}
-
-.latest-news-inner {
-
 }
 
 .latest-news-inner ul {
@@ -765,6 +756,10 @@ header .cover-byline {
 }
 
 .header-with-image-text {
+  background-color: rgba(255, 67, 34, 0.082);
+  width: 70%;
+  height: 100%;
+  padding: 12px;
   font-size: 14px;
 }
 
@@ -808,7 +803,7 @@ header .cover-byline {
 
 .header-image header h3 > a {
   color: white;
-  font-family: "ARS Maquette Bold";
+  font-family: "ARS Maquette Bold", Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .header-image header h3 > a:hover {
@@ -839,13 +834,6 @@ header .cover-byline {
   flex-direction: row;
   width: 100%;
   height: 15%;
-}
-
-.header-with-image-text {
-  background-color: rgba(255, 67, 34, 0.082);
-  width: 70%;
-  height: 100%;
-  padding: 12px;
 }
 
 .header-with-image-text > h5 {
@@ -883,7 +871,6 @@ header .cover-byline {
   color: #555;
   font-weight: lighter;
   font-size: 13px;
-  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -908,11 +895,11 @@ header .cover-byline {
 }
 
 .cover-title a {
-  font-family: "Avalon Bold";
+  font-family: "Avalon Bold", Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .cover-section {
-  font-family: 'Shentox', sans-serif;
+  font-family: "Shentox", Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1.5;
@@ -989,22 +976,10 @@ header .cover-byline {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .latest-news-container {
     margin-bottom: 4em;
   }
-}
-
-@media (min-width: 768px) {
-  .latest-news-container {
-    margin-bottom: 3em;
-  }
-}
-
-.latest-news-container {
-  margin-bottom: 2em;
-  padding-top: 24px;
-  margin-top: 100px;
 }
 
 @media (min-width: 768px) {
@@ -1026,16 +1001,14 @@ header .cover-byline {
 
 .footer-links-social {
   list-style-type: none;
-  margin-bottom: 1.5em;
-  margin: 0 auto;
+  margin: 0 auto 1.5em auto;
   padding: 3em 0 2em;
   width: fit-content;
 }
 
 .footer-links-menu {
   list-style-type: none;
-  margin-bottom: 1.5em;
-  margin: 0 auto;
+  margin: 0 auto 1.5em auto;
   padding: 0 0 2em;
   width: fit-content;
 }
@@ -1047,11 +1020,8 @@ header .cover-byline {
   display: inline-block;
   font-size: 13px;
   line-height: 24px;
-  margin: 0 4px;
-}
-
-.footer-links-menu li {
   color: #aaa;
+  margin: 0 4px;
 }
 
 .footer-links-social li {
@@ -1113,10 +1083,6 @@ header .cover-byline {
     z-index: 999;
   }
 
-  .main-nav-left {
-
-  }
-
   .countdown_bloc #ticket-sale,
   .countdown_bloc #conf-open,
   .countdown_bloc .learn_more_btn,
@@ -1127,10 +1093,6 @@ header .cover-byline {
   .top-nav-right {
     visibility: hidden;
   }
-}
-
-@media (min-width: 1023px) {
-
 }
 
 @media (max-width: 1113px) and (min-width: 1023px) {
@@ -1209,11 +1171,6 @@ header .cover-byline {
   .latest-news-box {
     height: unset;
     flex-direction: column;
-  }
-
-  .hero-container {
-    height: auto;
-    max-height: unset;
   }
 
   .latest-news-inner {
@@ -1365,10 +1322,6 @@ header .cover-byline {
     z-index: 999;
   }
 
-  .main-nav-left {
-
-  }
-
   .countdown_bloc #ticket-sale,
   .countdown_bloc #conf-open,
   .countdown_bloc .learn_more_btn,
@@ -1422,6 +1375,8 @@ header .cover-byline {
   }
 
   .hero-container {
+    height: auto;
+    max-height: unset;
     display: flex;
     flex-direction: column;
     padding: 8px;
@@ -1457,10 +1412,6 @@ header .cover-byline {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .lnc-mobile-1 {
-    display: unset;
-  }
-
   .lnc-desktop {
     display: none;
   }
@@ -1472,6 +1423,7 @@ header .cover-byline {
   .lnc-mobile-1 {
     margin: 100px 0 220px 0;
     display: block;
+    display: unset;
   }
 
   .latest-funding-inner-last {
